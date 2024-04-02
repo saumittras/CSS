@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Shadow</title>
+    <style>
+      h1.s {
+        font-family: cursive;
+        color: white;
+        text-shadow: 2px 2px 4px #000000; /*1. x-axis value. 2. y-axis value. 3. Shadow color.*/
+      }
+      h2 {
+        text-shadow: 2px 2px 5px blueviolet;
+      }
+      h1.neo{
+        text-shadow:0 0 3px #ff0000;
+      }
+      h1.dc{
+        text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+      }
+      h1.c3{
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="s">Text-shadow effect</h1class>
+    <h2>Text-shadow with blur effect</h2>
+    <h1 class="neo">Text-shadow with red neon glow!</h1>
+    <h1 class="dc">Text-Shadow with red and blue neon glow!</h1>
+    <h1 class="c3">Text-Shadow with three color</h1>
+  </body>
+</html>

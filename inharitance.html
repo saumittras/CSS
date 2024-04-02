@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inherited Margin</title>
+    <style>
+      div {
+        border: 1px solid red;
+        margin-left: 25px;
+      }
+      .ex1 {
+        margin-left: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Uses of inherit value</h2>
+    <p>Let the left margine be inherited from the parent element:</p>
+    <div>
+      <p class="ex1">
+        This paragraph has an inherited left margin (from the div element).
+      </p>
+    </div>
+  </body>
+</html>

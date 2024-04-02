@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Radious</title>
+    <style>
+      p {
+        border: 2px solid red;
+        padding: 5px;
+      }
+
+      #no_style {
+        border-style: none;
+      }
+
+      p.round1 {
+        border-radius: 5px;
+      }
+      p.round2 {
+        border-radius: 8px;
+      }
+      p.round3 {
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>The border-radious Property</h2>
+    <p id="no_style">
+      This property is used to add rounded borders to an element:
+    </p>
+    <p class="normal">Normal border</p>
+    <p class="round1">Round Border</p>
+    <p class="round2">Rounder border</p>
+    <p class="round3">Roundest border</p>
+  </body>
+</html>
