@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Menu Bar</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    ul.topnav li {
+      float: left;
+    }
+    ul.topnav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .active {
+      background-color: #04aa6d;
+    }
+    ul.topnav li a:hover:not(.active) {
+      background-color: #111;
+    }
+    div.content {
+      padding: 0 16px;
+    }
+    ul.topnav li.right-menu {
+      float: right;
+      padding-right: 15px;
+    }
+
+    @media screen and (max-width: 600px) {
+      ul.topnav li,
+      ul.topnav li.right-menu {
+        float: none;
+      }
+    }
+  </style>
+  <body>
+    <ul class="topnav">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="right-menu"><a href="#about">About</a></li>
+    </ul>
+    <div class="content">
+      <h2>Responsive Topnav Example</h2>
+      <p>
+        This example use media queries to stack the topnav vertically qhen the
+        screen size is 600px or less.
+      </p>
+      <p>
+        You will learn more about media queries and responsive web design later
+        in our CSS Tutorial.
+      </p>
+      <h4>Resize the browser window to see the effect.</h4>
+    </div>
+  </body>
+</html>

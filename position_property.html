@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The position Propertys</title>
+    <style>
+      div.static {
+        position: static;
+        border: 3px solid green;
+      }
+      div.relative1 {
+        position: relative;
+        left: 30px;
+        border: 3px solid red;
+      }
+
+      div.fixed {
+        position: fixed;
+        border: 3px solid blue;
+        bottom: 0;
+        width: 500px;
+      }
+      div.rlativ2 {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid green;
+      }
+      div.absulute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Position: static;</h2>
+    <p>
+      An element with position: static; is not positioned in any special awy; it
+      is always positioned according to the normal flow of the page:
+    </p>
+    <div class="static">This div element has position: static;</div>
+
+    <h2>position: relative;</h2>
+
+    <p>
+      An element with position: relative; is positioned relative to its normal
+      position:
+    </p>
+
+    <div class="relative1">This div element has position: relative;</div>
+    <h2>position:fixed;</h2>
+    <p>
+      An element with position: fixed; is positioned relative to the viewport,
+      which means it always stays in the same place even if the page is
+      scrolled:
+    </p>
+    <div class="fixed">This div element has position fixed;</div>
+
+    <h2>position:absulute;</h2>
+    <p>
+      An element with position:absulute; is positioned relative to the nearest
+      positioned ancestor(instead of positioned relative to the viewport, like
+      fixed):
+    </p>
+    <div class="relativ2">This div element has position: relative;</div>
+    <div class="absulute">This div element has position: absulute;</div>
+  </body>
+</html>

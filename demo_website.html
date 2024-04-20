@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .nav-menu {
+        background-color: #777;
+        color: white;
+        padding: 0;
+        margin: 0;
+      }
+      .footer {
+        background-color: #444;
+        color: white;
+        padding: 15px;
+      }
+      .nav-menu li {
+        float: left;
+        list-style-type: none;
+        padding: 8px;
+        display: block;
+      }
+      .nav-menu li a {
+        text-align: left;
+        text-decoration: none;
+        color: white;
+      }
+      .nav-menu::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .nav-menu li:hover {
+        background-color: #222;
+      }
+      .selected {
+        background-color: #4caf50;
+        margin: 14px 16px;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .menu,
+      .content {
+        float: left;
+        padding: 15px;
+      }
+      .menu {
+        width: 25%;
+      }
+      .content {
+        width: 75%;
+      }
+      .menu li {
+        list-style-type: none;
+        background-color: #eee;
+        margin: 4px;
+        padding: 8px;
+        color: #666;
+      }
+
+      .menu li:hover {
+        background-color: #555;
+        color: white;
+      }
+      .content-header {
+        background-color: #2196f3;
+        color: white;
+        text-align: center;
+        padding: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <header>
+        <div class="nav">
+          <ul class="nav-menu">
+            <li><a href="#home" class="selected">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+      </header>
+    </nav>
+    <main>
+      <div class="clearfix">
+        <div class="menu">
+          <ul>
+            <li>The Flight</li>
+            <li style="background-color: #008cba; color: white">The City</li>
+            <li>The Island</li>
+            <li>The Food</li>
+            <li>The People</li>
+            <li>The History</li>
+            <li>The Oceans</li>
+          </ul>
+        </div>
+        <div class="content">
+          <header>
+            <h1 class="content-header">The City</h1>
+          </header>
+          <h1>Chania</h1>
+          <p>
+            Chania is the capital of the Chania region on the island of Crete.
+            The city can be divided in two parts, the old town and the modern
+            city.
+          </p>
+          <p>
+            You will learn more about responsive web pages in a later chapter.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>Footer Text</p>
+      </div>
+    </footer>
+  </body>
+</html>

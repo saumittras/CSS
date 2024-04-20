@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <style>
+      header,
+      footer {
+        background-color: gray;
+        color: white;
+        padding: 15px;
+      }
+      .manu {
+        float: left;
+        padding: 15px;
+        width: 25%;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .body {
+        width: 75%;
+      }
+      .manu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .manu li a {
+        display: block;
+        list-style-type: none;
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #33b5e5;
+        color: #ffffff;
+      }
+      .manu li a:hover {
+        background-color: #0099cc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Chania</h2>
+    </header>
+    <aside>
+      <div class="manu clearfix">
+        <ul>
+          <li><a href="#flight">The Flight</a></li>
+          <li><a href="#city">The City</a></li>
+          <li><a href="#island">The Island</a></li>
+          <li><a href="#food">The Food</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <div class="body clearfix">
+        <h2>The City</h2>
+        <p>
+          Chania is the capital of the Chania region on the island of Crete. The
+          city can be divided in two parts, the old town and the modern city.
+          You will learn more about web layout and responsive web pages in a
+          later chapter.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>Footer Text</p>
+    </footer>
+  </body>
+</html>

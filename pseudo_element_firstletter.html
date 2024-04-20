@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First letter</title>
+    <style>
+      p#idm::first-letter {
+        color: green;
+        font-size: xxx-large;
+      }
+      p#idm::first-line {
+        color: #ff0000;
+      }
+      p#idm::before {
+        content: url("smiley.gif");
+        height: 70px;
+        width: 70px;
+      }
+      p#idm::after {
+        content: url("smiley.gif");
+      }
+
+      p.intro::first-letter {
+        color: #ff0000;
+        font-size: 200%;
+      }
+      p::marker {
+        color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="idm">
+      You can use the ::first-letter pseudo-element to add a special effect to
+      the first character of a text! Several pseudo-elements can also be
+      combined. In the following example, the first letter of a paragraph will
+      be red, in an xx-large font size. The rest of the first line will be blue,
+      and in small-caps. The rest of the paragraph will be the default font size
+      and color:
+    </p>
+    <p class="intro">This is an introduction.</p>
+    <p>This is a paragraph with some text. A bit more text even.</p>
+  </body>
+</html>
