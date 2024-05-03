@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS The max() Function</title>
+    <style>
+      div {
+        background-color: yellowgreen;
+        height: 100px;
+        margin: 20px;
+      }
+      #div1 {
+        width: max(50%, 300px);
+      }
+      #div2 {
+        width: min(50%, 300px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The max() Function</h1>
+    <p>
+      Use max() to set the width of #div1 to whichever value is largest, 50% or
+      300px:
+    </p>
+    <h3>use max() function</h3>
+    <div id="div1">Some Text....</div>
+    <h3>use min() function</h3>
+    <div id="div2">Some Text....</div>
+    <p>Resize the browser window to see the effect.</p>
+  </body>
+</html>
