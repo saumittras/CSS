@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS background0orgin Property</title>
+    <style>
+      div {
+        border: 10px solid black;
+        padding: 35px;
+        background: url(img_flwr.gif);
+        background-repeat: no-repeat;
+      }
+      #example2 {
+        background-origin: border-box;
+      }
+      #example3 {
+        background-origin: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The background-orgin Property</h1>
+    <p>No background-orgin (padding-box is default)</p>
+    <div id="example1">
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat.
+      </p>
+      <p>
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <p>background-orgin: border-box:</p>
+    <div id="example2">
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat.
+      </p>
+      <p>
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <p>background-orgin: content-box:</p>
+    <div id="example3">
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat.
+      </p>
+      <p>
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </body>
+</html>
