@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Gradients</title>
+    <style>
+      #grad1 {
+        height: 200px;
+        border: 1px solid red;
+        background-color: red;
+        background-image: linear-gradient(
+          red,
+          yellow
+        ); /*Default Direction is top to bottom*/
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    CSS gradients let you display smooth tr
+    CSS defines three types of gradients:
+    1. Linear Gradients(goes down/up/left/right/ digonally)
+    2. Radial Gradients (defined by thir center)
+    3. Conic Gradients(rotated around a center point)
+
+    1. Linear Gradients:
+    background-image: linear-gradient(direction, color-stop1, color-stop2,....)
+  -->
+
+    <h1>Linear Gradient - Top to Bottom</h1>
+    <p>
+      This linear gradient starts read at the top, transitioning to yellow at
+      the bottom:
+    </p>
+    <div id="grad1"></div>
+  </body>
+</html>
