@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A conic gradient with a from angle:</title>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        border-radius: 50%;
+      }
+      .grad1 {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        border-radius: 50%;
+        background-image: conic-gradient(from 90deg, red, yellow, green);
+      }
+      .conic2 {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        border-radius: 50%;
+        background-image: conic-gradient(at 60% 45%, red, yellow, green);
+      }
+      .grad3 {
+        background-image: repeating-conic-gradient(red 10%, yellow 20%);
+      }
+      .grad4 {
+        background-image: repeating-conic-gradient(
+          red 0deg 10deg,
+          yellow 10deg 20deg,
+          blue 20deg 30deg
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Conic Gradient - With a form angle</h1>
+    <div class="grad1"></div>
+    <h1>A conic gradient with a specified center position:</h1>
+    <div class="conic2"></div>
+    <h1>A repeating conic gradient:</h1>
+    <div class="grad3"></div>
+    <h1>
+      A repeating conic gradient with defined color-starts and color-stops:
+    </h1>
+    <div class="grad4"></div>
+  </body>
+</html>
