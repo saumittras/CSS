@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Bold Font face</title>
+    <style>
+      @font-face {
+        font-family: myFirstFont;
+        src: url(sansation_light.woff);
+      }
+      @font-face {
+        font-family: myFirstFont;
+        src: url(sansation_bold.woff);
+        font-weight: bold;
+      }
+      * {
+        font-family: myFirstFont;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The @font-face Rule</h1>
+    <p>
+      With CSS, website can use
+      <b>fonts other than the pre-selected "web-safe" fonts.</b>
+    </p>
+  </body>
+</html>
