@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation Mode Forward</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: ex;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes ex {
+        from {
+          top: 0px;
+        }
+        to {
+          top: 200px;
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation</h1>
+    <p>
+      Let the div element retain the style values set by the last keyframe when
+      the animation ends.
+    </p>
+    <div></div>
+  </body>
+</html>
