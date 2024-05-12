@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation with reverse property</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        animation-duration: 4s;
+        animation-name: example;
+        position: relative;
+        animation-iteration-count: infinite;
+      }
+      div.ex1 {
+        animation-direction: reverse;
+      }
+      div.ex2 {
+        animation-direction: alternate-reverse;
+      }
+      div.ex3 {
+        animation-direction: alternate;
+      }
+      div.ex4 {
+        animation-direction: alternate-reverse;
+      }
+      @keyframes example {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation</h1>
+    <p>
+      The animation-direction property specifies wheather an animation sould be
+      played forwards, backwards or in alternate cycles. The following example
+      will run the animation in reverse direction (backwards):
+    </p>
+    <div class="ex1">Normal</div>
+    <div class="ex2">reverse</div>
+    <!-- <div class="ex3">alternate</div>
+    <div class="ex4">alternate-reverse</div> -->
+  </body>
+</html>
