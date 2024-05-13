@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations Fill Mode</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation-name: example;
+        animation-duration: 3s;
+        animation-delay: 2s;
+      }
+
+      #ex1 {
+        animation-fill-mode: none;
+      }
+      #ex2 {
+        animation-fill-mode: forwards;
+      }
+      #ex3 {
+        animation-fill-mode: backwards;
+      }
+      #ex4 {
+        animation-fill-mode: both;
+      }
+
+      @keyframes example {
+        from {
+          top: 0px;
+          left: 0px;
+          background-color: yellow;
+        }
+        to {
+          top: 0px;
+          left: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation</h1>
+    <p>
+      Let the div element get the style values set by the first keyframe before
+      the animation starts, and retain the style values from the last keyframe
+      when the animation ends:
+    </p>
+    <div id="ex1">None</div>
+    <div id="ex2">forwards</div>
+    <div id="ex3">backwords</div>
+    <div id="ex4">both</div>
+  </body>
+</html>
