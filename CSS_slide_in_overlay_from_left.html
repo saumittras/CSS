@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide in Overlay from the Left</title>
+    <style>
+      .container {
+        position: relative;
+        width: 50%;
+        height: auto;
+      }
+      .image {
+        display: block;
+        height: auto;
+        width: 100%;
+      }
+      .overlayer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #008cba;
+        width: 0;
+        height: 100%;
+        transition: 0.5s ease;
+        overflow: hidden;
+      }
+      .text {
+        white-space: nowrap;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+      .container:hover .overlayer {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Slide in Overlay from the Left</h1>
+    <div class="container">
+      <img
+        src="img_avatar.png"
+        alt="Avator"
+        class="image"
+        style="width: 100%"
+      />
+      <div class="overlayer">
+        <div class="text">Hello World!</div>
+      </div>
+    </div>
+  </body>
+</html>
