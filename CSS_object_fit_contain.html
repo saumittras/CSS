@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using object-fit:contain</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 300px;
+        border: 5px solid red;
+        position: relative;
+      }
+      .box1 {
+        width: 350px;
+        height: 250px;
+        border: 5px solid green;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      img {
+        width: 200px;
+        height: 300px;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Using object-fit;contain</h2>
+    <div class="box">
+      <div class="box1">
+        <img src="paris.jpg" alt="paris" width="400" height="300" />
+      </div>
+    </div>
+  </body>
+</html>
