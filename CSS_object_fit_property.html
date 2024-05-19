@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The object-fit Property</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 300px;
+        border: 4px dotted peru;
+      }
+      img {
+        width: 200px;
+        height: 300px;
+      }
+      .fill {
+        object-fit: fill;
+      }
+      .contain {
+        object-fit: contain;
+      }
+      .cover {
+        object-fit: cover;
+      }
+      .scale-down {
+        object-fit: scale-down;
+      }
+      .none {
+        object-fit: none;
+      }
+      .fill {
+        object-fit: fill;
+      }
+      .contain {
+        object-fit: contain;
+      }
+      .cover {
+        object-fit: cover;
+      }
+      .scale-down {
+        object-fit: scale-down;
+      }
+      .none {
+        object-fit: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The object-fit Property</h1>
+
+    <h2>No object-fit:</h2>
+    <img src="paris.jpg" alt="Paris" style="width: 200px; height: 300px" />
+
+    <h2>object-fit: fill (this is default):</h2>
+    <img
+      class="fill"
+      src="paris.jpg"
+      alt="Paris"
+      style="width: 200px; height: 300px"
+    />
+
+    <h2>object-fit: contain:</h2>
+    <img
+      class="contain"
+      src="paris.jpg"
+      alt="Paris"
+      style="width: 200px; height: 300px"
+    />
+
+    <h2>object-fit: cover:</h2>
+    <img
+      class="cover"
+      src="paris.jpg"
+      alt="Paris"
+      style="width: 200px; height: 300px"
+    />
+
+    <h2>object-fit: scale-down:</h2>
+    <img
+      class="scale-down"
+      src="paris.jpg"
+      alt="Paris"
+      style="width: 200px; height: 300px"
+    />
+
+    <h2>object-fit: none:</h2>
+    <img
+      class="none"
+      src="paris.jpg"
+      alt="Paris"
+      style="width: 200px; height: 300px"
+    />
+    <h1>The object-fit Property</h1>
+    <h2>No object-fit:</h2>
+    <div class="box"><img src="paris.jpg" alt="paris" class="no" /></div>
+    <h2>object-fitt: fill (this is default):</h2>
+    <div class="box"><img src="paris.jpg" alt="paris" class="fill" /></div>
+    <h2>object-fit: contain:</h2>
+    <div class="box"><img src="paris.jpg" alt="Paris" class="contain" /></div>
+    <h2>object-fit: cover:</h2>
+    <div class="box"><img src="paris.jpg" alt="paris" class="cover" /></div>
+    <h2>object-fit: scale-down:</h2>
+    <div class="box">
+      <img src="paris.jpg" alt="paris" class=".scale-down" />
+    </div>
+    <h2>object-fit: none:</h2>
+    <div class="box"><img src="paris.jpg" alt="paris" class="none" /></div>
+  </body>
+</html>
