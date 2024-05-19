@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using object-position</title>
+    <style>
+      .real-picture-size {
+        width: 400px;
+        height: 300px;
+        border: 3px solid green;
+      }
+      .new-image-size {
+        width: 200px;
+        height: 300px;
+        border: 3px dashed red;
+      }
+      img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        object-position: 15% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Using object-position</h2>
+    <p>
+      Here we will use the object-position property to position the image so
+      that the famous Eifffel Tower is in center:
+    </p>
+    <div class="real-picture-size">
+      <div class="new-image-size">
+        <img src="paris.jpg" alt="Paris" width="400" height="300" />
+      </div>
+    </div>
+  </body>
+</html>
