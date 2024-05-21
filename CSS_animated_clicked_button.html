@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Button -"Pressed Effect"</title>
+    <style>
+      .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+        background-color: #04aa6d;
+        color: white;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        outline: none;
+        opacity: 0.6;
+        transition: 0.5s;
+      }
+      .button:hover {
+        background-color: #3e8e41;
+        opacity: 1;
+      }
+      .button:active {
+        background-color: purple;
+        box-shadow: 0 5px #999;
+        transform: translateY(4px);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Animated Button - "Pressed Effect"</h2>
+    <button class="button">Click Me</button>
+  </body>
+</html>
