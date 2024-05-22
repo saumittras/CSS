@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get and Change CSS Variable With JavaScript</title>
+    <style>
+      :root {
+        --blue: #1e90ff;
+        --white: #ffffff;
+      }
+      body {
+        background-color: var(--blue);
+      }
+      h2 {
+        border-bottom: 2px solid var(--blue);
+      }
+      .container {
+        background-color: var(--white);
+        color: var(--blue);
+        padding: 15px;
+        margin-bottom: 16px;
+      }
+      .container button {
+        background-color: var(--white);
+        padding: 5px;
+        border: 1px solid var(--blue);
+      }
+    </style>
+    <script>
+      var r = document.querySelector(":root");
+
+      function myFunction_get() {
+        var rs = getComputedStyle(r);
+        alert("The value of --blue is: " + rs.getPropertyValue("--blue"));
+      }
+
+      function myFunction_set() {
+        r.style.setProperty("--blue", "lightblue");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Get and Change CSS Variable With javaScript</h1>
+    <div class="container">
+      <h2>Lorem Ipsum</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque harum
+        nisi qui beatae impedit accusantium. In odit eum id fuga nulla iure
+        praesentium iste quidem expedita omnis? Quam, repudiandae doloribus?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, non
+        reprehenderit. Laudantium exercitationem ullam, voluptates minus quos
+        dignissimos delectus ad earum maxime natus veritatis non quia dolorem
+        voluptatum blanditiis enim?
+      </p>
+      <p>
+        <button>YES</button>
+        <button>NO</button>
+      </p>
+    </div>
+    <button type="button" onclick="myFunction_get()">
+      Get CSS Variable with JavaScript
+    </button>
+    <button type="button" onclick="myFunction_set()">
+      Change CSS Variable with JavaScript
+    </button>
+  </body>
+</html>
