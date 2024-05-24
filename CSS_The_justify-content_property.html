@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The justify-content Property</title>
     <style>
+      ::root {
+        --flex-bc: dodgerblue;
+        --flex-bbc: #f1f1f1;
+      }
       .flex-boxes {
         display: flex;
         background-color: dodgerblue;
@@ -44,6 +48,32 @@
         text-align: center;
         font-size: 30px;
       }
+      .flex-box-space-around {
+        background-color: dodgerblue;
+        display: flex;
+        justify-content: space-around;
+      }
+      .flex-box-space-around > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        line-height: 75px;
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+      }
+      .flex-box-space-between {
+        background-color: dodgerblue;
+        display: flex;
+        justify-content: space-between;
+      }
+      .flex-box-space-between > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        line-height: 75px;
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+      }
     </style>
   </head>
   <body>
@@ -73,6 +103,30 @@
       container:
     </p>
     <div class="flex-box-end">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <h1>The justify-content:space-around; Property</h1>
+
+    <p>
+      The "justify-content: space-around;" displays the flex items with space
+      before, between, and after the lines:
+    </p>
+
+    <div class="flex-box-space-around">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <h1>The justify-content:space-between; Property</h1>
+
+    <p>
+      The "justify-content: space-between;" displays the flex items with space
+      before, between, and after the lines:
+    </p>
+
+    <div class="flex-box-space-between">
       <div>1</div>
       <div>2</div>
       <div>3</div>
