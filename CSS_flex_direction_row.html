@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The flex-direction Property</title>
+    <style>
+      .row-flexbox {
+        display: flex;
+        background-color: dodgerblue;
+        flex-direction: row;
+      }
+      .row-flexbox > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        line-height: 75px;
+        font-size: 30px;
+        text-align: center;
+      }
+      .row-reverse-flexbox {
+        display: flex;
+        background-color: dodgerblue;
+        flex-direction: row-reverse;
+      }
+      .row-reverse-flexbox > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        line-height: 75px;
+        font-size: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The flex-direction Property</h1>
+    <p>
+      The "flex-direction: row;" stacks the flex items horizontally(from left to
+      right):
+    </p>
+    <div class="row-flexbox">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+    <div class="row-reverse-flexbox">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>

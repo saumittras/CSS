@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The justify-content Property</title>
+    <style>
+      .flex-boxes {
+        display: flex;
+        background-color: dodgerblue;
+        justify-content: center;
+      }
+      .flex-boxes > div {
+        background-color: white;
+        width: 100px;
+        line-height: 75px;
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+      }
+      .flex-box-start {
+        display: flex;
+        justify-content: flex-start;
+        background-color: dodgerblue;
+      }
+      .flex-box-start > div {
+        background-color: #f1f1f1;
+        line-height: 75px;
+        margin: 10px;
+        width: 100px;
+        text-align: center;
+        font-size: 30px;
+      }
+      .flex-box-end {
+        background-color: dodgerblue;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .flex-box-end > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        line-height: 75px;
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The "justify-content: Center;" Property</h1>
+    <p>
+      The "justify-content: center;" aligns the flex items at the center of the
+      container:
+    </p>
+    <div class="flex-boxes">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <h1>The "justify-content: flex-start;"</h1>
+    <p>
+      The "justify-content: flex-start;", aligns the flex items at the beginning
+      of the continer (this is default):
+    </p>
+    <div class="flex-box-start">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <h1>The "justify-content: flex-end;" Property</h1>
+    <p>
+      The "justify-content: flex-end;" aligns the flex items at the end of the
+      container:
+    </p>
+    <div class="flex-box-end">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>

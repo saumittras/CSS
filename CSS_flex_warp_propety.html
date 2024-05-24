@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the flex-warp Property</title>
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: dodgerblue;
+        flex-wrap: wrap;
+      }
+      .flex-container > div {
+        width: 100px;
+        line-height: 75px;
+        margin: 10px;
+        background-color: #f1f1f1;
+        font: 30px;
+        text-align: center;
+      }
+      .flex-container-nowarp {
+        display: flex;
+        background-color: dodgerblue;
+        flex-wrap: nowrap;
+      }
+      .flex-container-nowarp > div {
+        width: 100px;
+        line-height: 75px;
+        margin: 10px;
+        background-color: #f1f1f1;
+        font: 30px;
+        text-align: center;
+      }
+      .flex-container-warp-reverse {
+        display: flex;
+        background-color: dodgerblue;
+        flex-wrap: wrap-reverse;
+      }
+      .flex-container-warp-reverse > div {
+        width: 100px;
+        line-height: 75px;
+        margin: 10px;
+        background-color: #f1f1f1;
+        font: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The flex-warp Property</h1>
+    <p>
+      The "flex-warp: warp;" specifies that the flex items will wrap if
+      necessary:
+    </p>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+    <h1>flex-warp: nowarp;</h1>
+    <div class="flex-container-nowarp">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+    <h1>flex-warp: warp-reverse;</h1>
+    <p>
+      The "flex-wrap: wrap-reverse;" specifies that the flex items will wrap if
+      necessary, in reverse order:
+    </p>
+
+    <div class="flex-container-warp-reverse">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+  </body>
+</html>
