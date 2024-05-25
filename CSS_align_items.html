@@ -7,7 +7,10 @@
     <style>
       :root {
         --container-background: #1e90ff;
+        --container-height: 200px;
         --box-background: #f1f1f1;
+        --box-width: 100px;
+        --box-line-height: 75px;
         --fontsize: 30px;
         --margin: 10px;
       }
@@ -25,11 +28,35 @@
         margin: 10px;
         text-align: center;
       }
+      .flex-start {
+        background-color: var(--container-background);
+        height: 200px;
+        display: flex;
+        align-items: flex-start;
+      }
+      .flex-start > div {
+        background-color: var(--box-background);
+        width: var(--box-width);
+        line-height: var(--box-line-height);
+        margin: 10px;
+        font-size: var(--fontsize);
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <h1>The align-items: center; Property</h1>
     <div class="flex-box">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <h1>The align-items: flex-start; Property</h1>
+    <p>
+      The "align-items: flex-start;" aligns the flex items at the top of the
+      container.
+    </p>
+    <div class="flex-start">
       <div>1</div>
       <div>2</div>
       <div>3</div>
