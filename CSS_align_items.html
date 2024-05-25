@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The align-items Property</title>
+    <style>
+      :root {
+        --container-background: #1e90ff;
+        --box-background: #f1f1f1;
+        --fontsize: 30px;
+        --margin: 10px;
+      }
+      .flex-box {
+        background-color: var(--container-background);
+        display: flex;
+        align-items: center;
+        height: 200px;
+      }
+      .flex-box > div {
+        background-color: var(--box-background);
+        font-size: var(--fontsize);
+        line-height: 75px;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The align-items: center; Property</h1>
+    <div class="flex-box">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>
